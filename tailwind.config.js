@@ -4,7 +4,22 @@ module.exports = {
     "./src/components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    fontFamily: {
+      Ubuntu: ["Ubuntu", "sans-serif"],
+    },
+    extend: {
+      backgroundImage: {
+        "logo-pattern": "url('/bg-logo.png')",
+      },
+      colors: {
+        primary: {
+          500: "#38146C",
+        },
+        secondary: {
+          500: "#FD8353",
+        },
+      },
+    },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/forms")],
 };
