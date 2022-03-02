@@ -1,6 +1,7 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import { Dummy } from "../components/componentDummy";
+import { Footer } from "../components/componentFooter";
 import { NavBar } from "../components/componentNavbar";
 import { Waitlist } from "../components/componentWaitlist";
 import Emblem from "../components/logos/emblem";
@@ -19,6 +20,7 @@ const Home: NextPage = () => {
       <main className="container mx-auto">
         <Waitlist />
       </main>
+      <Footer />
     </div>
   );
 };

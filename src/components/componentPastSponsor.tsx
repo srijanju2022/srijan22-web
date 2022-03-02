@@ -22,7 +22,7 @@ export const PastSponsor = () => {
               style={{
                 boxShadow: "5px 5px white",
               }}
-              className="h-40 w-40 border-2 relative bg-primary-500"
+              className="h-40 w-40 border-2 relative bg-white"
             >
               <Image
                 className="p-10"
