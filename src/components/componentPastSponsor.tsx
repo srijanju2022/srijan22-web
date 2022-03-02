@@ -1,12 +1,6 @@
 import Image from "next/image";
 
 export const PastSponsor = () => {
-  const sponsors = [
-    {
-      name: "Jadavpur University",
-      logo: "/logos/juLogo.png",
-    },
-  ];
   const dummyArray = [...Array(24)];
   return (
     <>
@@ -25,9 +19,9 @@ export const PastSponsor = () => {
           return (
             <div
               key={i}
-              className="h-40 w-40 border-2 bg-primary-500 relative flex justify-center items-center p-3"
+              className="h-40 w-40 border-2 bg-primary-500 flex justify-center items-center p-3"
             >
-              <div className="h-40 w-40 border-2  ml-3 mt-3 absolute"></div>
+              <div className="h-40 w-40 border-2  ml-3 mt-3 absolute z-10"></div>
               <img
                 className="bg-primary-500 max-h-32"
                 src={`/images/${idx + 1}.png`}
