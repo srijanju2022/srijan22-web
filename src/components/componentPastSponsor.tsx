@@ -19,9 +19,11 @@ export const PastSponsor = () => {
           return (
             <div
               key={i}
-              className="h-40 w-40 border-2 bg-primary-500 flex justify-center items-center p-3"
+              style={{
+                boxShadow: "5px 5px white",
+              }}
+              className="h-40 w-40 border-2 bg-primary-500 flex justify-center shadow-2xl items-center p-3"
             >
-              <div className="h-40 w-40 border-2  ml-3 mt-3 absolute z-10"></div>
               <img
                 className="bg-primary-500 max-h-32"
                 src={`/images/${idx + 1}.png`}
