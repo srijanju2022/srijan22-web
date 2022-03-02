@@ -4,6 +4,16 @@ module.exports = {
     "./src/components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    container: {
+      screens: {
+        xs: "100%",
+        sm: "540px",
+        md: "720px",
+        lg: "960px",
+        xl: "1140px",
+        xxl: "1320px",
+      },
+    },
     fontFamily: {
       Ubuntu: ["Ubuntu", "sans-serif"],
     },
