@@ -14,7 +14,7 @@ export const PastSponsor = () => {
           <div className="h-3 w-3 bg-gray-500"></div>
         </div>
       </div>
-      <div className="grid grid-cols-5 my-20 gap-20 justify-between">
+      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 my-20 gap-20 justify-between">
         {dummyArray.map((i, idx) => {
           return (
             <div
@@ -22,15 +22,15 @@ export const PastSponsor = () => {
               style={{
                 boxShadow: "5px 5px white",
               }}
-              className="h-40 w-40 border-2 bg-primary-500 flex justify-center shadow-2xl items-center p-3"
+              className="h-40 w-40 border-2 relative bg-primary-500"
             >
-              <img
-                className="bg-primary-500 max-h-32"
+              <Image
+                className="p-10"
                 src={`/images/${idx + 1}.png`}
                 alt="Sponsor Logo"
-                // height="156"
-                // width="156"
-              ></img>
+                objectFit="contain"
+                layout="fill"
+              ></Image>
             </div>
           );
         })}
