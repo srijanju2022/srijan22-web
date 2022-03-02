@@ -18,7 +18,7 @@ export const PastSponsor = () => {
         {dummyArray.map((i, idx) => {
           return (
             <div
-              key={i}
+              key={idx}
               style={{
                 boxShadow: "5px 5px white",
               }}
