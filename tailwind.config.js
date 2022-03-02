@@ -6,12 +6,12 @@ module.exports = {
   theme: {
     container: {
       screens: {
-        xs: "100%",
+        xs: "90%",
         sm: "540px",
-        md: "720px",
-        lg: "960px",
-        xl: "1140px",
-        xxl: "1320px",
+        md: "700px",
+        lg: "910px",
+        xl: "1100px",
+        xxl: "1270px",
       },
     },
     fontFamily: {

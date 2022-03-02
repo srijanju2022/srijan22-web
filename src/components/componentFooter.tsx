@@ -7,9 +7,9 @@ import SrijanLogo from "./logos/srijanLogo";
 export const Footer = () => {
   return (
     <footer className="bg-primary-500 z-20 bottom-0 mt-10 py-8">
-      <div className="flex container mx-auto justify-between">
-        <div>
-          <div className="flex divide-x-2 text-white divide-secondary-500 items-center mx-auto space-x-2 container py-5">
+      <div className="flex flex-wrap container mx-auto justify-between px-5">
+        <div className="mx-auto md:mx-0">
+          <div className="flex  divide-x-2 text-white divide-secondary-500 items-center mx-auto space-x-2 container py-5">
             <JULogo />
             <SrijanLogo className="pl-4" />
           </div>
@@ -20,7 +20,7 @@ export const Footer = () => {
             All rights reserved to F.E.T.S.U, Jadavpur University
           </h3>
         </div>
-        <div className="text-white">
+        <div className="text-white mx-auto md:mx-0 mt-5">
           <h3 className="mb-5">
             Enter email to get into waiting list for SRIJAN&apos;22
           </h3>
