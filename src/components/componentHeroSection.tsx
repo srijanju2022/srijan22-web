@@ -2,7 +2,7 @@ import Emblem from "./logos/emblem";
 
 export const HeroSection = () => {
   return (
-    <section className="flex container items-center justify-between">
+    <section className="flex container h-[90vh] items-center  justify-between">
       <div>
         <h1 className="text-white capitalize font-bold text-6xl">
           SRIJAN&apos;22
