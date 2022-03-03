@@ -1,5 +1,6 @@
 import {useState} from "react";
 import Image from "next/image";
+import { EventImg } from "./componentEventImg";
 
 export const EventNav = () => {
     const [comedy, setComedy] = useState(true);
@@ -32,16 +33,9 @@ export const EventNav = () => {
                 <div className={special? "text-white text-4xl" : "text-gray-500 text-4xl"} onClick={selectSpecial}>Special Attraction</div>
             </div>
             <div>
-                {comedy? <div></div>: null}
-                {cultural? <div></div>: null}
-                {special? <div className="flex flex-col justify-around">
-                    <div className="flex flex-row relative">
-                       <Image src="/special/Img.jpg" width={100} height={100} />
-                    </div>
-                    <div className="flex flex-row">
-                        <Image src="/special/Img.jpg" width={100} height={100}/>
-                    </div>
-                </div>: null}
+                {comedy? <EventImg />: null}
+                {cultural? <EventImg />: null}
+                {special? <EventImg />: null}
             </div>
         </div>
     )

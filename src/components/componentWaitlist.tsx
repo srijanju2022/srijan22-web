@@ -1,3 +1,4 @@
+import { EventNav } from "./componentEventNav";
 import { Footer } from "./componentFooter";
 import { HeroSection } from "./componentHeroSection";
 import { PastSponsor } from "./componentPastSponsor";
@@ -8,6 +9,9 @@ export const Waitlist = () => {
     <>
       <section>
         <HeroSection />;
+      </section>
+      <section>
+        <EventNav />
       </section>
       <section>
         <PastSponsor />
