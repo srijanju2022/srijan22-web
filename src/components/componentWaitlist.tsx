@@ -1,9 +1,7 @@
-import { Footer } from "./componentFooter";
 import { FootFall } from "./componentFootfall";
 import { HeroSection } from "./componentHeroSection";
 import { PastSponsor } from "./componentPastSponsor";
 import { WhoAreWe } from "./componentWhoAreWe";
-
 export const Waitlist = () => {
   return (
     <>

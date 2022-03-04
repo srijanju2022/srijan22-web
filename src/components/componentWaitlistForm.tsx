@@ -1,5 +1,7 @@
 import { useState, FormEvent } from "react";
 import { supabase } from "../utils/supabaseClient";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 export const WaitlistForm = () => {
   const [email, setEmail] = useState<string | undefined>();
@@ -9,6 +11,13 @@ export const WaitlistForm = () => {
     const { data, error } = await supabase
       .from("wishlist_submission")
       .insert([{ email }]);
+    if (data) {
+      toast("Added to waitlist", { type: "success" });
+    }
+    if (error) {
+      if (error.code == "23505")
+        toast("Email already added to wishlist", { type: "info" });
+    }
   };
 
   return (
