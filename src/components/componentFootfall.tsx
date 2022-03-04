@@ -1,4 +1,4 @@
-import { Circle } from "./componentFootfallCircle";
+import { FootFallCircles } from "./componentFootfallCircle";
 
 export const FootFall = () => {
     return(
@@ -9,10 +9,13 @@ export const FootFall = () => {
                 a long-lasting <br/> impact. The following data is calculated on the basis of number of On-Day registrations, 
                 feedback forms <br/> and ID Cards.</p>
             </div>
-            <div className="flex flex-row justify-between">
-                <Circle />
-                <Circle />
-                <Circle />
+            <div className="flex flex-row justify-between items-center font-semibold" style={{
+                paddingLeft: "10%",
+                paddingRight: "10%",
+            }}>
+            
+                <FootFallCircles />
+
             </div>
         </div>
     )
