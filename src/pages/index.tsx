@@ -1,12 +1,9 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import { Dummy } from "../components/componentDummy";
+import { ToastContainer } from "react-toastify";
 import { Footer } from "../components/componentFooter";
 import { NavBar } from "../components/componentNavbar";
 import { Waitlist } from "../components/componentWaitlist";
-import Emblem from "../components/logos/emblem";
-import JULogo from "../components/logos/juLogo";
-import SrijanLogo from "../components/logos/srijanLogo";
 
 const Home: NextPage = () => {
   return (
@@ -18,6 +15,7 @@ const Home: NextPage = () => {
       </Head>
       <NavBar />
       <main className="container mx-auto">
+        <ToastContainer />
         <Waitlist />
       </main>
       <Footer />
